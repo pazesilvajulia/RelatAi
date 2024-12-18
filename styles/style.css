@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* -----------------  NAVBAR  -------------- */
+
+.menu{ 
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.bmenu{ 
+    padding: 35px;
+    margin-right: 60px; 
+    border-radius: 50px; 
+    background-color: 020f1b; 
+    -webkit-text-fill-color: #020f1b; 
+    font-size: 15px; 
+    font-weight: 500;
+}
+
+
+/* -----------------  LINKS E BUTTONS  -------------- */
+
+a{ 
+    text-decoration: none; 
+}
+
+.botao1{
+    background-color: #020f1b;
+    -webkit-text-fill-color: #ffffff;
+    padding: 15px;
+    margin-left: 550px;
+    
+}
+
+.main-button{
+    background-color: #ffffff;
+    width: 750px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    box-shadow: 5px 10px 20px 10px rgba(0, 0, 0, 0.123) /*hor ver desf esp - inset se for pra dentro*/
+    
+    
+}
+
+
+/* -----------------  SEPARADORES  -------------- */
+
+.line{
+    height: 0.5px;
+    background-color: #afadb5;
+}
+
+/* -----------------  SETUP GERAL  -------------- */
+
+body{ 
+    background-color: #ffffff; 
+    color: #151411; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    margin: 0;
+} 
+
+p{
+    color: #afadb5;
+    font-size: 20px;
+}
+
+.container1{
+    height: 440px;
+    display: grid;
+    place-items: center;
+}
+
+.container2{
+    margin: 0 auto;
+    width: 55%; 
+}
+
+h1,p{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
