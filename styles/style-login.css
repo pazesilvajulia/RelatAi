@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* -----------------  NAVBAR  -------------- */
+
+ .Navbar{ 
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.Navbar__Link{ 
+    padding: 35px;
+    margin-right: 60px; 
+    border-radius: 50px; 
+    background-color: 020f1b; 
+    font-size: 15px; 
+    font-weight: 500;
+    display: flex;
+} 
+
+.Navbar__Items {
+    display:flex;
+  }
+
+
+/* -----------------  LINKS E BUTTONS  -------------- */
+
+a{ 
+    text-decoration: none; 
+    -webkit-text-fill-color: #151411; 
+
+}
+
+
+
+/* -----------------  SEPARADORES  -------------- */
+
+.line{
+    height: 0.5px;
+    background-color: #afadb5;
+    width: 100vw;
+}
+
+
+/* -----------------  SETUP GERAL  -------------- */
+
+body{ 
+    background-color: #ffffff; 
+    color: #151411; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+} 
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/*------------ RESPONSIVIDADE NAVBAR ----------------*/
+
+@media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+    .Navbar__Items {
+      display:none;
+    }
+    .Navbar__Items--right {
+      margin-left:0;
+    }
+  }
+
+/*------------ FORM ----------------*/
+
+header {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    unicode-bidi: isolate;
+
+    
+}
+
+.container {
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    box-shadow: 8px 8px 15px 10px rgba(128, 128, 128, 0.219);
+    position: relative;
+    overflow: hidden;
+ 
+}
+
+.btn {
+    height: 60px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 30px rgb(182, 182, 182);
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+
+    
+}
+
+
+
+.login,
+.signup {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    -webkit-text-fill-color: #ffffff;
+    
+    
+}
+
+.slider {
+    height: 60px;
+    width: 150px;
+    border-radius: 0px;
+    background-color: #062949;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.moveslider {
+    left: 250px;
+    
+}
+
+.form-section {
+    height: 500px;
+    width: 1000px;
+    padding: 20px 0;
+    display: flex;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    left: 0px;
+}
+
+.form-section-move {
+    left: -500px;
+    
+}
+
+.login-box,
+.signup-box {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+
+.login-box {
+    gap: 30px;
+    padding-bottom: 150px;
+}
+
+.signup-box {
+    gap: 30px;
+    padding-bottom: 150px;
+
+}
+
+.ele {
+    height: 60px;
+    width: 400px;
+    outline: none;
+    border: none;
+    color: rgb(77, 77, 77);
+    background-color: rgb(240, 240, 240);
+    border-radius: 00px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.clkbtn {
+    height: 60px;
+    width: 150px;
+    border-radius: 0px;
+    background-color: #062949;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    -webkit-text-fill-color: #ffffff;
+}
+
+/* For Responsiveness of the page */
+
+@media screen and (max-width: 650px) {
+    .container {
+        height: 600px;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    .login,
+    .signup {
+        font-size: 19px;
+    }
+
+    .slider {
+        height: 50px;
+        width: 100px;
+        left: 50px;
+    }
+
+    .moveslider {
+        left: 150px;
+    }
+
+    .form-section {
+        height: 500px;
+        width: 600px;
+    }
+
+    .form-section-move {
+        left: -300px;
+    }
+
+    .login-box,
+    .signup-box {
+        height: 100%;
+        width: 300px;
+    }
+
+    .ele {
+        height: 50px;
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .clkbtn {
+        height: 50px;
+        width: 130px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        height: 600px;
+        width: 250px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    .login,
+    .signup {
+        font-size: 19px;
+    }
+
+    .slider {
+        height: 50px;
+        width: 100px;
+        left: 27px;
+    }
+
+    .moveslider {
+        left: 127px;
+    }
+
+    .form-section {
+        height: 500px;
+        width: 500px;
+    }
+
+    .form-section-move {
+        left: -250px;
+    }
+
+    .login-box,
+    .signup-box {
+        height: 100%;
+        width: 250px;
+    }
+
+    .ele {
+        height: 50px;
+        width: 220px;
+        font-size: 15px;
+    }
+
+    .clkbtn {
+        height: 50px;
+        width: 130px;
+        font-size: 19px;
+    }
+}

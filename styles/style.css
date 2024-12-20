@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* -----------------  NAVBAR  -------------- */
+
+ .Navbar{ 
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+} 
+
+.Navbar__Link{ 
+    padding: 35px;
+    margin-right: 60px; 
+    border-radius: 50px; 
+    background-color: 020f1b; 
+    font-size: 15px; 
+    font-weight: 500;
+    display: flex;
+} 
+
+.Navbar__Items {
+    display:flex;
+
+  }
+
+
+/* -----------------  LINKS E BUTTONS  -------------- */
+
+a{ 
+    text-decoration: none; 
+    -webkit-text-fill-color: #151411; 
+
+}
+
+.botao1{
+    background-color: #020f1b;
+    -webkit-text-fill-color: #ffffff;
+    padding: 15px;
+    margin-left: 550px;
+
+    
+    
+}
+
+.main-button{
+    background-color: #ffffff;
+    width: 750px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    box-shadow: 5px 10px 20px 10px rgba(0, 0, 0, 0.123); /*hor ver desf esp - inset se for pra dentro*/
+    z-index: 1;
+
+}
+
+
+
+
+
+
+/* -----------------  SEPARADORES  -------------- */
+
+.line{
+    height: 0.5px;
+    background-color: #afadb5;
+}
+
+/* -----------------  IMAGENS  -------------- */
+
+.img-principal{
+    position: absolute;
+    z-index: 0;
+    width: 900px;
+    padding-top: 50px;
+    
+}
+
+/* -----------------  SETUP GERAL  -------------- */
+
+body{ 
+    background-color: #ffffff; 
+    color: #151411; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    margin: 0;
+    height: 1000px;
+} 
+
+p{
+    color: #afadb5;
+    font-size: 20px;
+}
+
+.container1{
+    height: 440px;
+    display: grid;
+    place-items: center;
+}
+
+.container2{
+    margin: 0 auto;
+    width: 100%; 
+    display: grid;
+    place-items: top;
+    height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1,p{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+
+/*------------ RESPONSIVIDADE ----------------*/
+
+@media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+    .Navbar__Items {
+      display:none;
+    }
+    .Navbar__Items--right {
+      margin-left:0;
+    }
+  }
