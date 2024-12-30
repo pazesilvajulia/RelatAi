@@ -1,9 +1,9 @@
 function RecebeDados() {
 
-    var nome = document.getElementById("nomeid");
+    var nome = document.getElementById("nameid");
 
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    if (name.value != "") {
+        alert('Obrigado sr(a) ' + name.value + ' os seus dados foram encaminhados com sucesso');
     }
 
 }
